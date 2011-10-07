@@ -1,6 +1,3 @@
-CTF Qual Arena
-==============
-
 This project is an imitation of https://www.defcon.org/[DEF CON] CTF Qual platform, since I didn't find any implementation. The orignal platform is written in Java, this project is purely Python powered with https://www.djangoproject.com/[Django] framework.
 
 Requirements
@@ -26,7 +23,6 @@ $ git clone git://github.com/xiaogaozi/ctf-qual-arena.git cqa
 
 Create a temporary Django project to get the +SECRET_KEY+ in +settings.py+, and replace the same setting in +cqa/settings.py+.
 
-[source,bash]
 ----
 $ django-admin.py startproject tempproject
 $ grep 'SECRET_KEY' tempproject/settings.py
@@ -34,7 +30,6 @@ $ grep 'SECRET_KEY' tempproject/settings.py
 
 Replace +/path/to/cqa+ in +cqa/settings.py+ with your curreny path.
 
-[source,bash]
 ----
 $ sed -i "s%/path/to/cqa%$(pwd)/cqa%g" cqa/settings.py
 ----
@@ -45,7 +40,6 @@ Edit +CQA_ORGANIZER+ to whatever you wanted, this setting will be used as the Em
 
 Now run +syncdb+:
 
-[source,bash]
 ----
 $ cd cqa
 $ python manage.py syncdb
@@ -53,7 +47,6 @@ $ python manage.py syncdb
 
 Use MongoDB shell to get +SITE_ID+, then fill in +cqa/settings.py+ file. Note: everytime you drop Django database, you should repeat this step again.
 
-[source,bash]
 ----
 $ mongo
 > use cqa
@@ -101,7 +94,6 @@ WSGIPythonHome /path/to/virtualenv/BASELINE
 
 To serve admin static files, create a symbol link in +cqa/static+ directory.
 
-[source,bash]
 ----
 $ cd cqa/static
 $ ln -s /path/to/django/contrib/admin/media admin
@@ -112,7 +104,6 @@ Development
 
 Just run Django development server:
 
-[source,bash]
 ----
 $ python manage.py runserver
 ----
@@ -129,7 +120,6 @@ Getting involved
 
 CTF Qual Arena currently contains only two languages: English and Simplified Chinese. Translation is always welcome. With Django i18n support, it's very easy to translate into a new language. Create +.po+ file, translate, submit your +.po+ file. The following instructions is an example how to create +.po+ file. Django will automatically create it in +cqa/locale+ directory. For more language identifiers, please visit http://www.i18nguy.com/unicode/language-identifiers.html.
 
-[source,bash]
 ----
 $ cd cqa
 $ django-admin.py makemessages -l fr-FR
