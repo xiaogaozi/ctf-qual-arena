@@ -1,0 +1,10 @@
+{% load i18n %}
+{% blocktrans %}
+Congratulation! {{ username }}, you have successfully registered, your team name is: {{ team_name }}.
+
+If you need to register more team members, please send them this string: {{ name_hash }}, and fill in the "Team name" field of registration page. Please be careful to keep this string, it shouldn't leak to other players.
+
+Enjoy this game!
+
+{{ organizer }}
+{% endblocktrans %}

@@ -1,0 +1,49 @@
+{% load i18n %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>{% trans "Board - CTF Qual Arena" %}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link type="text/css" rel="stylesheet" href="{{ STATIC_URL }}stylesheets/board.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}javascripts/board.js"></script>
+    <!-- <link type="image/x-icon" rel="shortcut icon" href="/favicon.ico" /> -->
+</head>
+<body>
+    <h2>CTF Qual Arena</h2>
+    <div id="header">
+        <ul>
+           <li><div class="dashed">{% trans "Logged in as" %}: {{ user.username }}</div></li>
+           <li><div class="dashed">{{ player.team.name }} {% trans "Score" %}: {{ player.team.score }}</div></li>
+           <li><a href="/logout">{% trans "Logout" %}</a></li>
+        </ul>
+    </div>
+
+    <div class="clear"></div>
+
+    <div id="inner">
+        <div id="board" class="dashed left">
+            <table id="questions" border="1">
+            </table>
+        </div>
+
+        <div id="right-div" class="left">
+            <div id="detail" class="dashed">
+                <div class="desc"><p></p></div>
+                <form method="post" action="/hack/">
+                    {% csrf_token %}
+                    <input type="hidden" name="q_id" />
+                    <input type="text" name="answer" maxlength="100" />
+                    <input type="submit" value="{% trans "Hack it!" %}" />
+                </form>
+                <p>{% if message %}{{ message }}{% endif %}</p>
+            </div>
+
+            <div id="rank" class="dashed">
+                <p>{% trans "Leaders" %}</p>
+                <ol class="leaders"></ol>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

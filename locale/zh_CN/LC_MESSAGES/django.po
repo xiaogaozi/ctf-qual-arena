@@ -1,0 +1,171 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-07 22:16+0800\n"
+"PO-Revision-Date: 2011-10-07 22:37+0830\n"
+"Last-Translator: Changjian Gao <gaochangjian@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: accounts/forms.py:15
+msgid "Username is existed."
+msgstr "用户名已存在。"
+
+#: accounts/forms.py:29
+msgid "Team name is existed."
+msgstr "队名已存在。"
+
+#: accounts/forms.py:32
+#: accounts/forms.py:38
+msgid "Username"
+msgstr "用户名"
+
+#: accounts/forms.py:33
+#: accounts/forms.py:39
+msgid "Password"
+msgstr "密码"
+
+#: accounts/forms.py:34
+msgid "Email"
+msgstr "电子邮箱"
+
+#: accounts/forms.py:35
+msgid "Team name"
+msgstr "队名"
+
+#: accounts/models.py:9
+msgid "name"
+msgstr "队名"
+
+#: accounts/models.py:11
+#: arena/models.py:30
+msgid "score"
+msgstr "分数"
+
+#: accounts/models.py:14
+msgid "Resolved Questions"
+msgstr "已解决题目"
+
+#: accounts/views.py:64
+msgid "Registration Successful"
+msgstr "注册成功"
+
+#: accounts/views.py:97
+msgid "Your username and password were incorrect."
+msgstr "你的用户名和密码不正确。"
+
+#: arena/models.py:24
+msgid "Close"
+msgstr "关闭"
+
+#: arena/models.py:25
+msgid "Open"
+msgstr "开放"
+
+#: arena/models.py:29
+msgid "category"
+msgstr "分类"
+
+#: arena/models.py:31
+msgid "description"
+msgstr "描述"
+
+#: arena/models.py:32
+msgid "answer"
+msgstr "答案"
+
+#: arena/models.py:33
+msgid "status"
+msgstr "状态"
+
+#: arena/models.py:34
+msgid "Resolved Teams"
+msgstr "已解决的队伍"
+
+#: arena/views.py:86
+msgid "Oops, you request too fast."
+msgstr "哎哟，你请求太快了。"
+
+#: arena/views.py:108
+msgid "Yeah! You have the world."
+msgstr "嘿！世界现在由你掌控。"
+
+#: arena/views.py:110
+msgid "Dude, are you a newbie?"
+msgstr "老兄，你是菜鸟吧？"
+
+#: templates/500.html:10
+msgid "HTTP 500 Error"
+msgstr "HTTP 500 错误"
+
+#: templates/board.html:5
+msgid "Board - CTF Qual Arena"
+msgstr "题板 - CTF Qual Arena"
+
+#: templates/board.html:16
+msgid "Logged in as"
+msgstr "用户名"
+
+#: templates/board.html:17
+msgid "Score"
+msgstr "分数"
+
+#: templates/board.html:18
+msgid "Logout"
+msgstr "注销"
+
+#: templates/board.html:37
+msgid "Hack it!"
+msgstr "Hack it!"
+
+#: templates/board.html:43
+msgid "Leaders"
+msgstr "排行榜"
+
+#: templates/email_template.html:1
+#, python-format
+msgid ""
+"\n"
+"Congratulation! %(username)s, you have successfully registered, your team name is: %(team_name)s.\n"
+"\n"
+"If you need to register more team members, please send them this string: %(name_hash)s, and fill in the \"Team name\" field of registration page. Please be careful to keep this string, it shouldn't leak to other players.\n"
+"\n"
+"Enjoy this game!\n"
+"\n"
+"%(organizer)s\n"
+msgstr ""
+"\n"
+"%(username)s 恭喜你已成功注册，你的队伍名称是：%(team_name)s。\n"
+"\n"
+"如果你还需要注册更多队员，请将 %(name_hash)s 这串字符发给他们，并且填写在注册页面的“Team name”一栏。请注意保管这串字符，不要随便外泄给其他选手。\n"
+"\n"
+"祝你在接下来的比赛中玩得愉快！\n"
+"\n"
+"%(organizer)s\n"
+
+#: templates/index.html:33
+msgid "Login"
+msgstr "登录"
+
+#: templates/index.html:34
+#: templates/register.html:28
+msgid "Register"
+msgstr "注册"
+
+#: templates/register.html:5
+msgid "Register - CTF Qual Arena"
+msgstr "注册 - CTF Qual Arena"
+
+#: templates/register.html:13
+msgid "Welcome to register!"
+msgstr "欢迎注册！"
+

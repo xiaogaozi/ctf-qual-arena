@@ -1,0 +1,88 @@
+.dashed
+{
+    border: 1px dashed rgb(122,136,165);
+}
+
+.open
+{
+    background-color: rgb(25,67,198);
+}
+
+.close
+{
+    background-color: rgb(157,161,162);
+}
+
+.resolved
+{
+    background-color: rgb(13,205,5);
+}
+
+.selected
+{
+    background-color: rgb(119, 50, 199);
+}
+
+.left
+{
+    float: left;
+}
+
+#header ul
+{
+    list-style: none;
+}
+
+#header ul li
+{
+    float: left;
+    margin-left: 20px;
+}
+
+#inner
+{
+    margin: 20px 0;
+}
+
+#border
+{
+    margin-right: 5px;
+}
+
+#questions th, #questions td
+{
+    color: white;
+    text-align: center;
+    width: 100px;
+    height: 80px;
+}
+
+#questions th
+{
+    background-color: rgb(123,134,140);
+}
+
+#questions td.open
+{
+    cursor: pointer;
+}
+
+#right-div
+{
+    margin-left: 5px;
+}
+
+#detail
+{
+    margin-bottom: 5px;
+}
+
+#rank
+{
+    margin-top: 5px;
+}
+
+.clear
+{
+    clear: both;
+}
