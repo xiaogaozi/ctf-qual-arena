@@ -16,7 +16,6 @@ Bootstrap
 
 Clone CQA repository, note that directory name must be ``cqa'', cause it's also the Python package name.
 
-[source,bash]
 ----
 $ git clone git://github.com/xiaogaozi/ctf-qual-arena.git cqa
 ----
