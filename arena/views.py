@@ -1,7 +1,6 @@
 # Create your views here.
 
 import json
-import pickle
 from datetime import datetime
 
 from django.http import Http404, HttpResponse
