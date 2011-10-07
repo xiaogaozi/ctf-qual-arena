@@ -91,6 +91,8 @@ If you use virtualenv, you should follow http://code.google.com/p/modwsgi/wiki/V
 WSGIPythonHome /path/to/virtualenv/BASELINE
 ----
 
+Replace +/path/to/virtualenv+ and +/path/to/cqa+ in +cqa/apache/django.wsgi+ file with correct path.
+
 To serve admin static files, create a symbol link in +cqa/static+ directory.
 
 ----
