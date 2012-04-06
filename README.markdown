@@ -112,7 +112,7 @@ MongoDB default is running without security, if you consider this problem, pleas
 
 # Getting involved #
 
-CTF Qual Arena currently contains only two languages: English and Simplified Chinese. Translation is always welcome. With Django i18n support, it's very easy to translate into a new language. Create `.po` file, translate, submit your `.po` file. The following instructions is an example how to create `.po` file. Django will automatically create it in +cqa/locale+ directory. For more language identifiers, please visit http://www.i18nguy.com/unicode/language-identifiers.html.
+CTF Qual Arena currently contains only two languages: English and Simplified Chinese. Translation is always welcome. With Django i18n support, it's very easy to translate into a new language. Create `.po` file, translate, submit your `.po` file. The following instructions is an example how to create `.po` file. Django will automatically create it in `cqa/locale` directory. For more language identifiers, please visit http://www.i18nguy.com/unicode/language-identifiers.html.
 
 ```bash
 $ cd cqa
