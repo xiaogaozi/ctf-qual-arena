@@ -33,7 +33,7 @@ If you use Mac OS, use this command:
 $ sed -i '' "s%/path/to/cqa%$(pwd)/cqa%g" cqa/settings.py
 ```
 
-Linux user use this command:
+And Linux user use this command:
 
 ```bash
 $ sed -i "s%/path/to/cqa%$(pwd)/cqa%g" cqa/settings.py
