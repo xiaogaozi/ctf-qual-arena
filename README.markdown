@@ -27,6 +27,14 @@ $ grep 'SECRET_KEY' tempproject/settings.py
 
 Replace `/path/to/cqa` in `cqa/settings.py` with your curreny path.
 
+If you use Mac OS, use this command:
+
+```bash
+$ sed -i '' "s%/path/to/cqa%$(pwd)/cqa%g" cqa/settings.py
+```
+
+Linux user use this command:
+
 ```bash
 $ sed -i "s%/path/to/cqa%$(pwd)/cqa%g" cqa/settings.py
 ```
